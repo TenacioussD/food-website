@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Chev2home: Local Produce Delivery</title>
+  <link href="styles/stylesheet.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts/main.js"></script>
+</head>
+
+<body>
+
+<!-- Top header -->
+
+<div class="header">
+  <img id="call" alt="Call" src="images/icons/phone.png">
+   <a id="contact" href="contact.html">Contact us</a>
+   <a id="register" href="login.html">Register</a>
+  <img id="user" alt="User" src="images/icons/user.png">
+   <a id="login" href="login.html">Sign in</a> 
+</div>
+ 
+<!-- Navigation bar -->
+
+<nav class="nav">
+  <a href="index.html"><img alt="Chev2home" src="images/logo.png"></a>
+    <div>
+	  <a class="link" href="index.html">Home</a>
+	  <a class="link" href="shop.html">Shop Now</a>
+	  <a class="link" href="about.html">Our Story</a>
+	  <a class="link" href="#">Delivery Info</a>
+	  <a class="link" href="contact.html">Contact Us</a>
+	<div class="buttons"> 
+		<button onclick="window.location.href='cart.html';" class="cart">$0.00&nbsp;&nbsp;<i class="fa fa-shopping-cart"></i></button>
+		 <form class="search">
+		  <input type="text" placeholder="Search">
+	      <button type="submit"><i class="fa fa-search"></i></button>
+		 </form>
+	</div>
+    </div>
+</nav>
+
+<!-- Banner -->
+
+<div>
+ <img class="banner2" alt="cart" src="images/banner/cart.png">
+</div>
+
+<!-- Cart Content -->
+
+<div class="title-login">
+  <h1>Shopping Cart</h1>
+  <hr class="line5">
+</div>
+
+<!-- Cart -->
+
+  <main class="main-border">
+    <div class="basket">
+      <div class="basket-module">
+        <label for="promo-code">Enter a promotional code</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="money">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="images/boxes/family.png" alt="Family Box" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">2</span>x Family</strong> Box</h1>
+            <p>Items that will delight the family</p>
+          </div>
+        </div>
+        <div class="money">79.99</div>
+        <div class="quantity">
+          <input type="number" value="2" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">159.98</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="images/boxes/keto.png" alt="Keto Box" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">1</span>x Keto</strong> Box</h1>
+            <p>A selection of keto produce</p>
+          </div>
+        </div>
+        <div class="money">54.99</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">54.99</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">214.97</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+             <option value="0" selected="selected">Select Delivery Type</option>
+             <option value="next-day">Next Day Delivery</option>
+             <option value="standard">Standard Delivery</option>
+             <option value="signed-for">Signature Required</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">214.97</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Go to Secure Checkout</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+  
+
+
+<!-- Footer -->
+
+<footer class="footer">
+	<hr class="line1">
+	<div>
+      <a class="link" href="index.html">Home</a>
+	  <a class="link" href="shop.html">Shop Now</a>
+	  <a class="link" href="about.html">Our Story</a>
+	  <a class="link" href="">Delivery Info</a>
+	  <a class="link" href="contact.html">Contact Us</a>
+	</div>
+	  <hr class="line1">
+	   <form class="search" action="#">
+	    <button type="submit"><i class="fa fa-search"></i></button>
+	    <input type="text" placeholder="Search">
+	   </form>
+	  <hr class="line2">
+	<div>
+	 <a class="face" href="https://www.facebook.com/chev2home/"><img alt="Facebook" src="images/icons/facebook.png"></a>
+	 <a class="insta" href="https://www.instagram.com/chev2home/?hl=en"><img alt="Instagram" src="images/icons/instagram.png"></a>
+	   <div class="line3"></div>
+	      <a class="call" href="contact.html"><img alt="Contact" src="images/icons/phone.png"></a>
+	      <a class="contact" href="contact.html"><b>Give us a call</b><br>03 528 5679</a>
+	   <div class="line3"></div>
+	      <a class="policy" href="#">Refund policy<br>Privacy policy</a>
+	</div>
+</footer>
+
+<script>
+  showSlides(slideIndex);
+</script>
+</body>
+
+</html>
